@@ -1,0 +1,30 @@
+[
+    {
+        "topic": "about",
+        "content": "I’m Ansari Md Minhaj, a Front-End Developer and Freelance developer at Dotific Digital. I specialize in React.js, JavaScript, and responsive web design, creating visually engaging and high-performance websites. With over a year of experience, I’ve built multiple web projects and handled SEO and marketing strategies for clients. I’m passionate about UI/UX, website optimization, and constantly improving my skills to become a full-stack developer"
+    },
+    {
+        "topic": "skills",
+        "content": "My skills include HTML, CSS, JavaScript, React.js, Express.js, MongoDB, and SEO optimization. I have strong expertise in front-end development, building responsive and user-friendly web interfaces using React, Bootstrap, and Tailwind CSS. On the backend, I work with Node.js and Express.js, managing databases with MongoDB and implementing RESTful APIs. I’m also skilled in on-page SEO, content optimization, and performance improvement to enhance website visibility. Currently, I’m learning advanced React and Next.js to strengthen my full-stack development skills."
+    },
+    {
+        "topic": "projects",
+        "content": "I’ve built multiple projects showcasing my front-end and backend development expertise. My React portfolio highlights my work, skills, and achievements with smooth animations and a modern dark interface. I developed a Gemini AI Chatbot integrated into my portfolio, enabling users to interact and learn more about me through AI-powered responses. I created a Student Record System using Express.js and MongoDB, featuring full CRUD functionality for managing student data. I also designed a responsive animated portfolio website with clean transitions and engaging visuals. Additionally, I worked on a YouTube UI Clone"
+    },
+    {
+        "topic": "experience",
+        "content": "I’ve worked at Dotific Digital as a freelancer, where I managed content marketing, developed responsive websites, and contributed to analytics and SEO strategy. I also completed an internship at Ihaan Technologies as a Frontend Developer Intern, where I built and optimized an e-commerce website frontend with product listings, cart functionality, and a modern UI. Additionally, I worked at Schnell Apps as a Frontend Developer, focusing on creating user-friendly web interfaces, improving performance, and ensuring responsive design across all devices. These experiences have strengthened my technical, creative, and problem-solving skills as a developer"
+    },
+    {
+        "topic": "education",
+        "content": "I hold a Bachelor of Science in Information Technology (BSc IT), completed in 2024, where I developed a strong foundation in programming, web technologies, and software development. Additionally, I’ve completed a professional MERN Stack Certification Course, gaining hands-on experience in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js."
+    },
+    {
+        "topic": "age",
+        "content": "I’m 23 years old. I was born in 2002 and currently living in Mumbai, India. Despite my young age, I’ve gained strong technical and professional experience through freelancing and working at Corporate, continuously improving my skills in web development and digital marketing."
+    },
+    {
+        "topic": "location",
+        "content": "I live in Mumbai, Maharashtra, India — a vibrant city known as the heart of technology, creativity, and innovation. Living here keeps me inspired and motivated to work on modern digital solutions and stay connected with the fast-growing tech community."
+    }
+]
