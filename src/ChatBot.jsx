@@ -56,9 +56,10 @@ export default function ChatBot() {
     const prompt = `
 You are Minhaj's AI assistant.
 Answer professionally, briefly, and with a friendly tone.
-If the question is unrelated to Minhaj or the portfolio, respond politely.
+You have access to Minhaj's portfolio information below. If the user asks about Minhaj, use this context to provide accurate answers.
+If the user asks about anything else, feel free to answer them using your general knowledge.
 
-Context:
+Context about Minhaj:
 ${context}
 
 User:
@@ -66,7 +67,7 @@ ${input}
 `;
 
     try {
-      const apiKey = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyCZhVI-6VXTtJrHx3i4kzPKuoYHYfUvb_c";
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
       const res = await fetch(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
         {
