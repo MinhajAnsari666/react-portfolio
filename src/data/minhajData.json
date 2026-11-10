@@ -9,7 +9,7 @@
     },
     {
         "topic": "projects",
-        "content": "I’ve built multiple projects showcasing my front-end and backend development expertise. My React portfolio highlights my work, skills, and achievements with smooth animations and a modern dark interface. I developed a Gemini AI Chatbot integrated into my portfolio, enabling users to interact and learn more about me through AI-powered responses. I created a Student Record System using Express.js and MongoDB, featuring full CRUD functionality for managing student data. I also designed a responsive animated portfolio website with clean transitions and engaging visuals. Additionally, I worked on a YouTube UI Clone"
+        "content": "I’ve built multiple projects showcasing my front-end and backend development expertise. Featured personal projects include the iPhone 16 Pro 3D Website (https://iphone-3d-website-three.vercel.app/), built with React, Three.js, GSAP, and Tailwind CSS with 3D model rendering; and a Gemini AI Chatbot integrated into my portfolio. In industrial and client development, I built web solutions for The Vishesh Group (https://www.thevisheshgroup.com/), a luxury real estate developer, as well as Dotific Digital and Lib Digital. Additionally, I built a YouTube UI Clone, a Student Record System using Express.js and MongoDB, and an animated portfolio website with clean transitions and engaging visuals."
     },
     {
         "topic": "experience",

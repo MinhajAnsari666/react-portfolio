@@ -68,22 +68,60 @@ ${input}
 
     try {
       const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-      const res = await fetch(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "X-goog-api-key": apiKey
-          },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-          }),
-        }
-      );
 
-      const data = await res.json();
-      const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry — I couldn't process that.";
+      if (!apiKey) {
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", text: "API key is not configured. Please set VITE_GEMINI_API_KEY." },
+        ]);
+        return;
+      }
+
+      const models = [
+        "gemini-flash-lite-latest",
+        "gemini-3.5-flash-lite",
+        "gemini-flash-latest",
+      ];
+
+      let reply = "";
+
+      for (const model of models) {
+        try {
+          const res = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "X-goog-api-key": apiKey,
+              },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+              }),
+            }
+          );
+
+          if (!res.ok) {
+            console.warn(`Model ${model} returned HTTP ${res.status}`);
+            continue;
+          }
+
+          const data = await res.json();
+          const parts = data?.candidates?.[0]?.content?.parts || [];
+          const textPart = parts.find((p) => p.text && !p.thought) || parts[0];
+
+          if (textPart?.text) {
+            reply = textPart.text;
+            break;
+          }
+        } catch (fetchErr) {
+          console.warn(`Error querying ${model}:`, fetchErr);
+        }
+      }
+
+      if (!reply) {
+        reply = "Sorry — I'm temporarily unable to respond. Please try again in a moment.";
+      }
 
       setMessages((prev) => [...prev, { role: "bot", text: reply }]);
     } catch (err) {

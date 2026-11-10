@@ -6,8 +6,18 @@ import  YT from './assets/Youtube.png';
 import  PORT from  './assets/portfolioimg.png';
 import DD from './assets/dotific.png';
 import LIB from './assets/lib.png';
+import IPHONE from './assets/iphone-3d.jpg';
+import VG from './assets/vishesh-group.jpg';
 
 const personalProjects = [
+  {
+    title: "iPhone 16 Pro (3D Website)",
+    description:
+      "An interactive 3D product showcase inspired by Apple's iPhone 16 Pro website. Built with Three.js and GSAP for immersive 3D model rendering, fluid scroll-driven animations, 360-degree rotation, and dynamic color transitions.",
+    img: IPHONE,
+    tech: ["React", "Three.js", "GSAP", "Tailwind CSS"],
+    link: "https://iphone-3d-website-three.vercel.app/",
+  },
   {
     title: "AI ChatBot",
     description:
@@ -35,6 +45,14 @@ const personalProjects = [
 ];
 
 const industrialProjects = [
+  {
+    title: "The Vishesh Group",
+    description:
+      "A premium corporate web platform built for Vishesh Group, a luxury real estate developer. Features architectural branding, interactive property showcase, priority viewing booking, and responsive UI.",
+    img: VG,
+    tech: ["Web Development", "UI/UX", "Responsive Design", "SEO"],
+    link: "https://www.thevisheshgroup.com/",
+  },
   {
     title: "Dotific Digital",
     description:
